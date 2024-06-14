@@ -747,7 +747,7 @@ ul li .date{
     }
 
     .container::after{
-        margin-top: -1000px;
+        margin-top: -1200px;
         left: -26.5px;
     }
 
@@ -824,8 +824,8 @@ ul li .date{
         transform: translateX(0);
     }
 
-    .container::after{
-        margin-top: -990px;
+      .container::after{
+        margin-top: -1200px;
         left: -26.5px;
     }
 
@@ -1016,8 +1016,8 @@ ul li .date{
         transform: translateX(0);
     }
 
-    .container::after{
-        margin-top: -990px;
+      .container::after{
+        margin-top: -1200px;
         left: -26.5px;
     }
 
