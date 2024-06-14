@@ -747,9 +747,8 @@ ul li .date{
     }
 
     .container::after{
-        margin-top: -700px;
+        margin-top: -1000px;
         left: -26.5px;
-        height: 20%;
     }
 
     .about-me{
