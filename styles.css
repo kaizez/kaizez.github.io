@@ -1309,5 +1309,29 @@ ul li .date{
 
     .heading{
         margin-top: -200px;
+        font-size: 2.3rem;
+    }
+
+    .container ul li {
+        height: 300px;
+    }
+
+    .container ul li .title {
+        font-size: 2rem;
+        margin-top: 60px;
+    }
+
+    ul li p {
+    font-size: 20px;
+    margin: 20px 0;
+    }
+
+    .container li a {
+        font-size: 21px;
+    }
+
+    .container::after {
+        width: 3px;
+        left: 52.23%;
     }
 }
