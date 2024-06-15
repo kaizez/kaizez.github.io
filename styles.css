@@ -606,13 +606,23 @@ nav li:first-child {
 
 
 
-.container ul li:nth-child(odd){
+
+.container ul li:nth-child(1){
     float: left;
     clear: right;
     transform: translateX(-30px);
-      animation: movedown 1s linear forwards;
+      animation: movedown 0s linear forwards;
     opacity: 0;
 }
+
+.container ul li:nth-child(3){
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+      animation: movedown 5s linear forwards;
+    opacity: 0;
+}
+
 
 .container ul li:nth-child(odd) .date{
     right: 20px;
@@ -620,11 +630,18 @@ nav li:first-child {
     opacity: 0;
 }
 
-.container ul li:nth-child(even){
+.container ul li:nth-child(2){
     clear: left;
     transform: translateX(110px);
       animation: movedown 3s linear forwards;
     opacity: 0;
+}
+
+.container ul li:nth-child(4){
+    clear: left;
+    transform: translateX(110px);
+      animation: movedown 8s linear forwards;
+      opacity: 0;
 }
 
 .container ul li:nth-child(4){
