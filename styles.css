@@ -1200,8 +1200,165 @@ ul li .date{
 
 }
 
+@media (min-width:1917px ) and (max-width:1947px){
+    #box1 {
+    margin-left: 50%;
+    margin-top: -95%;
 
-@media (min-width: 1917px) {
+    }
+    .changecolor {
+        color: #3E6FF4;
+    }
+
+    .home__blob {
+        fill: #3E6FF4;
+    }
+
+    .words {
+
+        margin-top: 1px;
+        margin-left: 5%;
+    }
+
+    .intro {
+        font-size: 220%;
+        margin-left: 15%;
+        padding: 300px 0;
+
+    }
+
+    .homelogo {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+
+    .home__img {
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 800px;
+        margin-right: 20%;
+    }
+
+
+    .home__blob-img {
+        width: 360px;
+    }
+
+
+    #image2 {
+        width: 20%;
+        height: 45%;
+        background-color: var(--favblue);
+        position: absolute;
+        float: left;
+        margin-top: 30%;
+        margin-left: 5%;
+        border-radius: 15px;
+        animation: fade-down 0.5s 0.4s backwards;
+    }
+
+    #image1 {
+        width: 20%;
+        height: 45%;
+        background-color: var(--favblue);
+        position: absolute;
+        float: left;
+        margin-top: 1%;
+        margin-left: 5%;
+        border-radius: 15px;
+        animation: fade-down 0.5s 0.4s backwards;
+    }
+
+    #image3 {
+        width: 20%;
+        height: 55%;
+        background-color: var(--favblue);
+        position: absolute;
+        float: left;
+        margin-left: 30%;
+        margin-top: 15%;
+        border-radius: 15px;
+        animation: fade-down 0.5s 0.4s backwards;
+    }
+
+    #image4 {
+        width: 40%;
+        height: 35%;
+        background-color: var(--favblue);
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 55%;
+        border-radius: 15px;
+        animation: fade-down 0.5s 0.4s backwards;
+    }
+
+    #image5 {
+        width: 40%;
+        height: 35%;
+        background-color: var(--favblue);
+        position: absolute;
+        float: right;
+        margin-top: 30%;
+        margin-left: 55%;
+        border-radius: 15px;
+        animation: fade-down 0.5s 0.4s backwards;
+    }
+
+    .collage {
+        overflow-y: auto;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .pc-collage {
+        height: 100vh;
+        margin-bottom: 100px;
+    }
+
+    .other-collage {
+        display: none;
+    }
+
+     .container ul li:nth-child(even){
+        float: right;
+    }
+
+    .heading{
+        margin-top: -200px;
+        font-size: 2.3rem;
+    }
+
+    .container ul li {
+        height: 300px;
+    }
+
+    .container ul li .title {
+        font-size: 2rem;
+        margin-top: 60px;
+    }
+
+    ul li p {
+    font-size: 20px;
+    margin: 20px 0;
+    }
+
+    .container li a {
+        font-size: 21px;
+    }
+
+    .container::after {
+        width: 3px;
+        left: 52.23%;
+    }
+}
+
+
+@media (min-width: 1948px) {
     .changecolor {
         color: #3E6FF4;
     }
