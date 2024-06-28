@@ -20,8 +20,11 @@ $(function() {
       titleDiv.text(demo_title);
       var html = '';
       html += '<div class="iframe-wrapper"><iframe id="demo-iframe" src="' + demo_url + '">This feature requires inline frames. You have iframes disabled or your browser does not support them.</iframe></div>';
-      $('.devices button[data-device-mode="desktop"]').addClass('active');
+      $('.devices button[data-device-mode="desktop"]').removeClass('active');
+      $('.devices button[data-device-mode="tablet"]').removeClass('active');
+      $('.devices button[data-device-mode="mobile"]').addClass('active');
       $('#iframe-content').append(html).show();
+      $('#iframe-content').attr('class', 'mobile');  // Set the default device mode to mobile
     });
   }
 
@@ -37,7 +40,7 @@ $(function() {
 
   //For responsiveness tab
   var responsiveTabs = $('.devices button[data-device-mode]');
-  if (responsiveTabs.length > 0) {  // Corrected conditional
+  if (responsiveTabs.length > 0) {
     responsiveTabs.click(function() {
       responsiveTabs.removeClass('active');
       $(this).addClass('active');
@@ -47,3 +50,4 @@ $(function() {
     });
   }
 });
+
