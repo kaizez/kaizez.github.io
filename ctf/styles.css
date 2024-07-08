@@ -1,0 +1,151 @@
+html {
+    font-family: "Poppins";
+}
+
+body {
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #FFFAFA;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+    font-size: larger;
+    font-weight: 580;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 100;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+.ctf-title {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: 50;
+}
+
+.Tags {
+    margin-top: 20px;
+    display: flex;
+}
+
+.Tags h2,
+h3 {
+    margin-left: 20px;
+    font-weight: 50;
+    font-size: large;
+}
+
+.Tags h3 {
+    background-color: #3e6ff4;
+    color: white;
+    width: max-content;
+    border-radius: 20%;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+    font-size: large;
+
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #3333333b;
+    background-color: #3333333b;
+    width: 90%;
+    
+    }
+
+.author{
+    font-size: smaller;
+    margin-left: 20px;
+}
+
+.description-title{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 50;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.p-description{
+    padding: 20px;
+    font-weight: smaller;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 640px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
