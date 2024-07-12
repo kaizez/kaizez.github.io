@@ -117,15 +117,15 @@ hr {
     color: #3333333b;
     background-color: #3333333b;
     width: 90%;
-    
-    }
 
-.author{
+}
+
+.author {
     font-size: smaller;
     margin-left: 20px;
 }
 
-.description-title{
+.description-title {
     margin-left: 20px;
     margin-top: 20px;
     font-weight: 50;
@@ -133,10 +133,52 @@ hr {
     margin-top: 10px;
 }
 
-.p-description{
+.p-description {
     padding: 20px;
     font-weight: smaller;
 }
+
+.Submitbutton {
+    height: 25px;
+    width: 100px;
+    margin-left: 20px;
+    background-color: #3e6ff4;
+    color: white;
+    border-radius: 7px;
+    border-color: #3e6ff4;
+    margin-top: 7px;
+}
+
+
+.input-container {
+    position: relative;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.input-container input {
+    width: 100%;
+    padding-left: 40px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 7px;
+
+}
+
+.input-container .flag-icon {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    margin-left: 20px;
+}
+
+.flag-icon img {
+    width: 20px;
+    height: auto;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------*/
 
 
