@@ -7,11 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&amp;_cacheOverride=1718074597376" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
     <script src="main.js"></script>
     <title>CTF Challenge</title>
 </head>
 
 <body>
+<a href="flag.txt"></a>
 
     <nav>
         <ul class="sidebar">
@@ -52,16 +55,15 @@
     <br>
     <hr align="right">
     
-
+    <p id="results"></p>
     <div class="input-container">
         <div class="flag-icon">
             <img src="../img/flag.png" alt="Flag Logo">
         </div>
         <form method="">
         <input type="text" placeholder="CTF{FLAG}" id="Submit">
-        <button class="Submitbutton" onclick="checkValue()">Submit Flag</button>
+        <button class="Submitbutton" onclick="checkValue(event)">Submit Flag</button>
         </form>
-    <p id="results"></p>
     </div>
 </body>
 
