@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&amp;_cacheOverride=1718074597376" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
     <script src="main.js"></script>
@@ -14,7 +16,7 @@
 </head>
 
 <body>
-<a href="flag.txt"></a>
+    <a href="flag.txt"></a>
 
     <nav>
         <ul class="sidebar">
@@ -25,14 +27,12 @@
                     </svg></a></li>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects/projects.html">Projects</a></li>
-            <li><a href="#">Certificates</a></li>
             <li><a href="#">CTF</a></li>
         </ul>
         <ul>
             <li><a href="#">Wei Kiat</a></li>
             <li class="hideonmobile"><a href="../index.html">Home</a></li>
             <li class="hideonmobile"><a href="../projects/projects.html">Projects</a></li>
-            <li class="hideonmobile"><a href="#">Certificates</a></li>
             <li class="hideonmobile"><a href="#">CTF</a></li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -40,30 +40,61 @@
                     </svg></a></li>
         </ul>
     </nav>
-    <h2 class="ctf-title">The Invisible Password</h2>
+    <div class="main">
+        <h2 class="ctf-title">The Invisible Password</h2>
 
-    <div class="Tags">
-        <h2>Tags:</h2>
-        <h3>Web </h3>
-    </div>
-    <br>
-    <hr align="content">
-    <br>
-    <p class="author">AUTHOR:WEI KIAT</p>
-    <h3 class="description-title">Description:</h3>
-    <p class="p-description">While Developing this website the Web Developer has left some files in this page, find out what it is!</p>
-    <br>
-    <hr align="right">
-    
-    <p id="results"></p>
-    <div class="input-container">
-        <div class="flag-icon">
-            <img src="../img/flag.png" alt="Flag Logo">
+        <div class="Tags">
+            <h2>Tags:</h2>
+            <h3>Web </h3>
         </div>
-        <form method="">
-        <input type="text" placeholder="CTF{FLAG}" id="Submit">
-        <button class="Submitbutton" onclick="checkValue(event)">Submit Flag</button>
-        </form>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <p class="author" onclick="bug()">AUTHOR:WEI KIAT</p>
+        <h3 class="description-title">Description:</h3>
+        <p class="p-description">While Developing this website the Web Developer has left some files in this page, find
+            out what it is!</p>
+        <br>
+        <hr style="margin-left: 15px; width: 90%;">
+        <div class="Hints-block">
+            <table>
+                <td class="table1">
+                    <p>Hints</p>
+                <td>
+                <td><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f88f4">
+                        <path
+                            d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                <td>
+            </table>
+            <h3 class="hint-no" onclick="hint()">1</h3>
+            <div>
+                <p class="hint-description">Perhaps you have found the flag, but you can't comprehand the whitespaces,
+                    how would you decode whitespaces?</p>
+            </div>
+        </div>
+        <hr style="margin-left: 15px; width: 90%; margin-top: 30px;">
+        <p id="results"></p>
+        <div class="popup-container">
+            <div class="popup-content">
+                <span id="closePopupBtn" class="close" onclick="closepopup()">&times;</span>
+                <h2>Congratulations!</h2>
+                <p>You have successfully completed the challenge!</p>
+                <img src="../img/party-icon-confetti-popper-illustration-png.webp" alt="Celebration"
+                    style="width:100%;">
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="flag-icon">
+                <img src="../img/flag.png" alt="Flag Logo">
+            </div>
+            <form method="">
+                <input type="text" placeholder="CTF{FLAG}" id="Submit">
+                <button class="Submitbutton" onclick="checkValue(event)">Submit Flag</button>
+            </form>
+        </div>
     </div>
 </body>
 

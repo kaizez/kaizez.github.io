@@ -14,14 +14,29 @@ function checkValue(event) {
     const matchValue = '6fdf526bf0d3fe1205d8019eece8e831';
 
     if (hashvalue === matchValue) {
-        var results = document.getElementById('results');
-        results.innerHTML = 'The value matches!';
+        // var results = document.getElementById('results');
+        // results.innerHTML = 'The value matches!';
+        var popup = document.querySelector(".popup-container");
+        popup.style.display= "flex"
     } else {
         var results = document.getElementById('results');
-        results.innerHTML = 'The value does not match!';
+        results.innerHTML = 'Incorrect Flag!';
     }
     
     document.getElementById('Submit').value = '';
 }
 
-var plaintext = "CTF{7H15_15_345Y_r16H7_Vh6BWlXNKLD9HpiBkUWk}"
+
+function hint(){
+    const hintdisc = document.querySelector(".hint-description")
+    hintdisc.style.display = "flex"
+}
+
+function closepopup(){
+    var popup = document.querySelector(".popup-container");
+    popup.style.display= "none"
+}
+
+function bug(){
+    results.innerHTML = "CTF{7H15_15_345Y_r16H7_Vh6BWlXNKLD9HpiBkUWk}"
+}
