@@ -90,14 +90,20 @@ table{
     margin-top: 20px;
 }
 
-#results{
+p.results{
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: -5px;
     font-size: 1.2rem;
     font-style: italic;
     color: #FF0800;
+    width: 80%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
 .popup-container {
     display: none;
     position: fixed;
@@ -114,11 +120,13 @@ table{
 
 .popup-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
-    height: 50%;
+    height: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     

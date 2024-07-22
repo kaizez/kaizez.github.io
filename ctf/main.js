@@ -62,8 +62,8 @@ function checkValue(event) {
         var popup = document.querySelector(".popup-container");
         popup.style.display = "flex";
     } else {
-        var results = document.getElementById('results');
-        results.innerHTML = 'Incorrect Flag!';
+        var results = document.querySelector('.results');
+        results.textContent = 'Incorrect Flag!';
     }
     
     document.getElementById('Submit').value = '';
@@ -80,8 +80,8 @@ function closepopup() {
 }
 
 function bug() {
-    var results = document.getElementById('results');
-    results.innerHTML = "CTF{7H15_15_345Y_r16H7_Vh6BWlXNKLD9HpiBkUWk}";
+    var results = document.querySelector('.results');
+    results.textContent = "CTF{7H15_15_345Y_r16H7_Vh6BWlXNKLD9HpiBkUWk}";
 }
 
 document.getElementById('openPopupBtn').addEventListener('click', openPopup);

@@ -435,24 +435,6 @@ nav li:first-child {
     font-weight: bold;
 }
 
-#image2 {
-    width: 20%;
-    height: 45%;
-    position: absolute;
-    background-color: var(--favblue);
-    border-radius: 15px;
-    animation: fade-down 0.5s 0.4s backwards;
-}
-
-#image1 {
-    width: 20%;
-    height: 45%;
-    background-color: var(--favblue);
-    float: left;
-    border-radius: 15px;
-    animation: fade-down 0.5s 0.4s backwards;
-}
-
 #image3 {
     width: 20%;
     height: 55%;
@@ -487,6 +469,16 @@ nav li:first-child {
 
 .pc-collage {
     height: 100vh;
+}
+
+.text-inside{
+    color: var(--favblue);
+    padding: 10px;
+}
+
+.the-text-inside{
+    color: var(--favblue);
+    padding: 10px;
 }
 
 .other-collage {
@@ -1250,29 +1242,6 @@ ul li .date{
     }
 
 
-    #image2 {
-        width: 20%;
-        height: 45%;
-        background-color: var(--favblue);
-        position: absolute;
-        float: left;
-        margin-top: 30%;
-        margin-left: 5%;
-        border-radius: 15px;
-        animation: fade-down 0.5s 0.4s backwards;
-    }
-
-    #image1 {
-        width: 20%;
-        height: 45%;
-        background-color: var(--favblue);
-        position: absolute;
-        float: left;
-        margin-top: 1%;
-        margin-left: 5%;
-        border-radius: 15px;
-        animation: fade-down 0.5s 0.4s backwards;
-    }
 
     #image3 {
         width: 20%;
@@ -1285,7 +1254,7 @@ ul li .date{
         border-radius: 15px;
         animation: fade-down 0.5s 0.4s backwards;
     }
-
+    
     #image4 {
         width: 40%;
         height: 35%;
@@ -1295,6 +1264,12 @@ ul li .date{
         margin-left: 55%;
         border-radius: 15px;
         animation: fade-down 0.5s 0.4s backwards;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    #image4.hovered{
+    background-color: white;
+    color: black;
     }
 
     #image5 {
@@ -1307,6 +1282,12 @@ ul li .date{
         margin-left: 55%;
         border-radius: 15px;
         animation: fade-down 0.5s 0.4s backwards;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    #image5.hovered{
+    background-color: white;
+    color: black;
     }
 
     .collage {
@@ -1317,7 +1298,7 @@ ul li .date{
 
     .pc-collage {
         height: 100vh;
-        margin-bottom: 100px;
+        margin-bottom: 170px;
     }
 
     .other-collage {
@@ -1403,41 +1384,25 @@ ul li .date{
     }
 
 
-    #image2 {
-        width: 20%;
-        height: 45%;
-        background-color: var(--favblue);
-        position: absolute;
-        float: left;
-        margin-top: 30%;
-        margin-left: 5%;
-        border-radius: 15px;
-        animation: fade-down 0.5s 0.4s backwards;
-    }
-
-    #image1 {
-        width: 20%;
-        height: 45%;
-        background-color: var(--favblue);
-        position: absolute;
-        float: left;
-        margin-top: 1%;
-        margin-left: 5%;
-        border-radius: 15px;
-        animation: fade-down 0.5s 0.4s backwards;
-    }
 
     #image3 {
-        width: 20%;
-        height: 55%;
-        background-color: var(--favblue);
+        width: 35%;
+        height: 75%;
+        background-color: white;
         position: absolute;
         float: left;
-        margin-left: 30%;
-        margin-top: 15%;
+        margin-left: 10%;
+        margin-top: 8%;
         border-radius: 15px;
         animation: fade-down 0.5s 0.4s backwards;
     }
+
+    
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 
     #image4 {
         width: 40%;
@@ -1448,6 +1413,12 @@ ul li .date{
         margin-left: 55%;
         border-radius: 15px;
         animation: fade-down 0.5s 0.4s backwards;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    #image4.hovered{
+    background-color: white;
+    color: black;
     }
 
     #image5 {
@@ -1460,6 +1431,11 @@ ul li .date{
         margin-left: 55%;
         border-radius: 15px;
         animation: fade-down 0.5s 0.4s backwards;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    #image5.hovered{
+    background-color: white;
+    color: black;
     }
 
     .collage {
@@ -1470,7 +1446,7 @@ ul li .date{
 
     .pc-collage {
         height: 100vh;
-        margin-bottom: 100px;
+        margin-bottom: 170px;
     }
 
     .other-collage {
