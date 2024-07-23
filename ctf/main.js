@@ -61,6 +61,10 @@ function checkValue(event) {
     if (hashvalue === matchValue) {
         var popup = document.querySelector(".popup-container");
         popup.style.display = "flex";
+         const hintdisc = document.querySelector(".hint-description");
+        hintdisc.style.display = "none";
+         var results = document.querySelector('.results');
+        results.textContent = "";
     } else {
         var results = document.querySelector('.results');
         results.textContent = 'Incorrect Flag!';
