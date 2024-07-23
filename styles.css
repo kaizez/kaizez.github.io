@@ -473,13 +473,21 @@ nav li:first-child {
 
 .text-inside{
     color: var(--favblue);
-    padding: 10px;
+    padding: 30px;
+    font-size: 20px;
+    margin: 20px 0;
+    padding-top: 100px;
 }
 
 .the-text-inside{
     color: var(--favblue);
-    padding: 10px;
+    padding: 30px;
+    font-size: 20px;
+    margin: 20px 0;
+    padding-top: 100px;
 }
+
+
 
 .other-collage {
     margin-top: 30%;
