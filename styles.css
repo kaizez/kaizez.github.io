@@ -474,7 +474,7 @@ nav li:first-child {
 .text-inside{
     color: var(--favblue);
     padding: 30px;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 20px 0;
     padding-top: 100px;
 }
@@ -482,7 +482,7 @@ nav li:first-child {
 .the-text-inside{
     color: var(--favblue);
     padding: 30px;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 20px 0;
     padding-top: 100px;
 }
