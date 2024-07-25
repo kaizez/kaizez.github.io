@@ -30,3 +30,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         sechoverDiv.classList.add('hovered');
     });
 });
+
+function popup(popupClass) {
+    var popup = document.querySelector("." + popupClass);
+    popup.style.display = "flex";
+}
+
+function closepopup(popupClass) {
+    var popup = document.querySelector("." + popupClass);
+    popup.style.display = "none";
+}
