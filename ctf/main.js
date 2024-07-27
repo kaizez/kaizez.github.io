@@ -104,3 +104,33 @@ window.addEventListener('touchstart', function(event) {
         closepopup();
     }
 });
+
+
+function popup(popupClass) {
+    var popup = document.querySelector("." + popupClass);
+    popup.style.display = "flex";
+}
+
+function closepopup(popupClass) {
+    var popup = document.querySelector("." + popupClass);
+    popup.style.display = "none";
+}
+
+function checkValue1(event) {
+    event.preventDefault();
+    var inputValue = document.getElementById('Submit').value;
+    var hashvalue = CryptoJS.MD5(inputValue).toString();
+    const matchValue = '6fdf526bf0d3fe1205d8019eece8e831';
+
+    if (hashvalue === matchValue) {
+        var results = document.querySelector('.results');
+        results.textContent = 'Answer Is Correct!';
+        const hintdisc = document.querySelector(".hint-description");
+        hintdisc.style.display = "none";
+    } else {
+        var results = document.querySelector('.results');
+        results.textContent = 'Incorrect Flag!';
+    }
+    
+    document.getElementById('Submit').value = '';
+}
