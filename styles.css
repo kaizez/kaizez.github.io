@@ -1,9 +1,10 @@
 :root {
     --firstpill: #99CCFF;
-    --secondpill: #111111;
-    --firstcirc: #111111;
-    --secondcirc: #111111;
+    --secondpill: #000080  ;
+    --firstcirc: #708090    ;
+    --secondcirc: #4682B4   ;
     --favblue: #3e6ff4;
+    --letter: #2C3539   ;
 }
 
 
@@ -187,7 +188,7 @@ nav li:first-child {
     font-size: 2em;
     padding-left: 30px;
     font-weight: bold;
-    color: #003366;
+    color: var(--letter);
 }
 
 .letter2 {
@@ -199,7 +200,7 @@ nav li:first-child {
     font-size: 2em;
     padding-left: 30px;
     font-weight: bold;
-    color: #003366;
+    color: var(--letter);
 }
 
 .letter3 {
@@ -211,7 +212,7 @@ nav li:first-child {
     font-size: 2em;
     padding-left: 35px;
     font-weight: bold;
-    color: #003366;
+    color: var(--letter);
 }
 
 
@@ -384,7 +385,7 @@ nav li:first-child {
 
 
 .letter4 {
-    color: #003366;
+    color: var(--letter);
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -396,7 +397,7 @@ nav li:first-child {
 }
 
 .letter5 {
-    color: #003366;
+    color: var(--letter);
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -408,7 +409,7 @@ nav li:first-child {
 }
 
 .letter6 {
-    color: #003366;
+    color: var(--letter);
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -420,7 +421,7 @@ nav li:first-child {
 }
 
 .letter7 {
-    color: #003366;
+    color: var(--letter);
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -901,9 +902,17 @@ ul li .date{
         margin-top: -300px;
         left: -30px;
     }
+
+    .read-more{
+        display: none;
+    }
 }
 
 @media(min-width: 640px) and (max-width: 886px) {
+    .read-more{
+        display: none;
+    }
+
     .words {
         margin-top: 30%;
     }
@@ -982,6 +991,10 @@ ul li .date{
 }
 
 @media (min-width:886px) and (max-width: 1248px){
+    .read-more{
+        display: none;
+    }
+
      .words {
         margin-top: 30%;
     }
